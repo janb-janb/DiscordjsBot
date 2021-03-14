@@ -1,8 +1,7 @@
 const {MessageEmbed} = require('discord.js')
 
 const Helpembed = new MessageEmbed()
-.setTitle("Embed Title")
-.setDescription("Embed Description")
+.setTitle("List of Engine Commands")
 .addFields(
   {name: `.help (.commands)`, value: `Command that lists you all bots commands!`, inline: true},
   {name: `.challenge-help`, value: `Command that lists you all challenge commands!`, inline: false},
