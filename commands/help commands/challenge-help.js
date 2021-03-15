@@ -16,6 +16,8 @@ const ChallengeHelpembed = new MessageEmbed()
             .setFooter(`NOTE: If you don't want to run commands you can ping our Challenger Troop and it will work. :)`)
 
 module.exports = {
+  category: 'Help Commands',
+  description: 'Command that lists all bots challenge commands!',
   aliases: ['chllng-cmds'], 
   callback: ({ message }) => {
 

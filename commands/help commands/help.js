@@ -11,9 +11,11 @@ const Helpembed = new MessageEmbed()
 .setFooter("Bot is Still under Development!")
 
 module.exports = {
+  category: 'Help Commands',
+  description: 'Command that lists all bots commands!',
   aliases: ['commands', 'h'], 
   callback: ({ message }) => {
-
+ 
 message.reply(Helpembed)
   }
 };
