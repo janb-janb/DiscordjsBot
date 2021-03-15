@@ -7,7 +7,7 @@ const client = new DiscordJS.Client({
 })
 
 client.on('ready', () => {
-  client.user.setActivity('Fixes incoming!');
+  client.user.setActivity('📣 Check Announcements!');
   // See the "Language Support" section of this documentation
   // An empty string = ignored
   const messagesPath = ''
