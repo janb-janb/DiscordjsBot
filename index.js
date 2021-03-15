@@ -62,13 +62,12 @@ client.on('ready', () => {
     ])
   })
     
-client.on(“message”, async (message) => {
-  If(message.content == “hello”){
-    message.reply(“Hello!”)
-  }else{
-    return
-  }
-}
+client.on('message', async (message) => {
+    if(message.content == "hello" || message.content == "Hello"){
+        message.reply("Hello!")
+    }
+})
+
           
          
 client.login('NzcwMzU4OTY1NjUzNDcxMjMy.X5casQ.towJbYbs6qUkvI2O_W-EqlQwH2g')
