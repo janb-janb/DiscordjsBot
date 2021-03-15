@@ -4,7 +4,7 @@ const Helpembed = new MessageEmbed()
 .setTitle("List of Engine Commands")
 .addFields(
   {name: `.help (.commands or .h) -`, value: `Command that lists you all bots commands!`, inline: true},
-  {name: `.challenge-help -`, value: `Command that lists you all challenge commands!`, inline: false},
+  {name: `.challenge-help (.chllng-cmds) -`, value: `Command that lists you all challenge commands!`, inline: false},
   {name: `.ping (.p) -`, value: `Shows latency between you and discord.`, inline: true}
 )
 .setColor(0x228ae6)
