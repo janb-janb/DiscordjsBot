@@ -74,7 +74,6 @@ client.on('message', async (message) => {
     }
 }) 
 
-
 client.on('message', async (message) => {
   if(message.content == "hello" || message.content == "Hello"){
     message.react("👋")
