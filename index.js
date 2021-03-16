@@ -62,4 +62,10 @@ client.on('ready', () => {
     ])
   })
 
+  client.on('message', async (message) => {
+    if(message.content == "hello" || message.content == "Hello"){
+        message.channel.send("Hi! How are you doing?")
+    }
+})
+
 client.login('NzcwMzU4OTY1NjUzNDcxMjMy.X5casQ.towJbYbs6qUkvI2O_W-EqlQwH2g')
