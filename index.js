@@ -74,6 +74,12 @@ client.on('message', async (message) => {
     }
 }) 
 
-          
+
+client.on('message', async (message) => {
+  if(message.content == "hello" || message.content == "Hello"){
+    message.react("👋")
+  }
+})
+        
          
 client.login('NzcwMzU4OTY1NjUzNDcxMjMy.X5casQ.towJbYbs6qUkvI2O_W-EqlQwH2g')
