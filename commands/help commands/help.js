@@ -5,7 +5,8 @@ const Helpembed = new MessageEmbed()
 .addFields(
   {name: `.help (.commands or .h) -`, value: `Command that lists you all bots commands!`, inline: true},
   {name: `.challenge-help (.chllng-cmds) -`, value: `Command that lists you all challenge commands!`, inline: false},
-  {name: `.ping (.p) -`, value: `Shows latency between you and discord.`, inline: true}
+  {name: `.ping (.p) -`, value: `Shows latency between you and discord.`, inline: true},
+  {name: `.disboard -`, value: `Mentions disboard bump channel!`, inline: false}
 )
 .setColor(0x228ae6)
 .setFooter("Bot is Still under Development!")
