@@ -7,7 +7,7 @@ const client = new DiscordJS.Client({
 })
 
 client.on('ready', () => {
-  client.user.setActivity('🧩Check #Puzzles! | .help ');
+  client.user.setActivity('SquidsRuleHere is bad person!!! | .help ');
   // See the "Language Support" section of this documentation
   // An empty string = ignored
   const messagesPath = ''
