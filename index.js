@@ -60,17 +60,6 @@ client.on('ready', () => {
     ])
   })
     
-client.on('message', async (message) => {
-    if(message.content == "hello" || message.content == "Hello"){
-        message.channel.send("Hi! How are you doing?")
-    } else if(message.content == "hi" || message.content == "Hi"){
-      message.channel.send("Hello! How are you doing?")
-    } else if(message.content == "hello!" || message.content == "Hello!" ){
-      message.channel.send("Hi! How are you doing?")
-    } else if(message.content == "hi!" || message.content == "Hi!"){
-      message.channel.send("Hello! How are you doing?")
-    }
-}) 
 
 client.on('message', async (message) => {
   if(message.content == "hello" || message.content == "Hello"){
