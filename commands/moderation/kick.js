@@ -11,6 +11,8 @@ module.exports = {
         let kickReason = args.join(" ").slice(22);
         if (!kickReason) {
           kickReason = "None"
+        } else {
+            message.channel.send(`${tag} Please specify someone to kick.`)
         }
         
         User.kick({reason: kickReason})
