@@ -57,6 +57,10 @@ client.on('ready', () => {
         name: 'Challenge Commands',
         emoji: '🚧',
       },
+    {
+      name: 'Moderation',
+      emoji: '🛠️'
+    },
     ])
   })
     
