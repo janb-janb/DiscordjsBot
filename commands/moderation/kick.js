@@ -2,12 +2,19 @@ const DiscordJS = require('discord.js')
 const WOKCommands = require('wokcommands')
 
 module.exports = {
-      callback: ({ message }) => {
+      callback: ({ message, args }) => {
 
-        if (message.guild.member(user).hasPermission('ADMINISTRATOR')) return message.reply('I can not kick this user, he has higher permission than I do.')
-        if (!message.guild.me.hasPermission('KICK_MEMBERS')) return message.reply('I need the permission `KICK_MEMBERS` for this to work.')
+        if (!message.member.hasPermission("KICK_MEMBERS")) return message.channel.send("Invalid Permissions")
+        let User = message.guild.member(message.mentions.users.first()) || message.guild.members.get(args[0])
+        if (!User) return message.channel.send("Invalid User")
+        if (User.hasPermission("KICK_MEMBERS")) return message.reply("Invalid Permissions")
+        let kickReason = args.join(" ").slice(22);
+        if (!kickReason) {
+          kickReason = "None"
+        }
         
-        message.guild.member(user).kick()
-        msessage.channel.send('Mentioned user has been successfully kicked!' )
+        User.kick({reason: kickReason})
+        message.reply('You succesfully kicked that user!')
+
+      }
     }
-}
