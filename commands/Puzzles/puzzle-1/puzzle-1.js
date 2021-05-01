@@ -7,7 +7,7 @@ module.exports = {
     aliases: ['puzzle-1'],
     callback: ({ message }) => {
       message.channel.send('Find the best move for black. Please use .ans followed by your move. https://imgur.com/hjxGZ4H');
-      answer = true;
+     var answer = true;
       }
     }
 
@@ -16,4 +16,4 @@ module.exports = {
   if(answer = true){
     message.channel.send('Great! 1. Ree1 Bxd1 2. Rxd1. Please use .ans followed by your move. https://imgur.com/nnXNCwT');
   }
-    })
+    }
