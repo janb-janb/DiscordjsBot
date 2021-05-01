@@ -1,3 +1,5 @@
+const message = require('discord.js')
+
 var answer = false;
 module.exports = {
     category: 'Puzzles',
@@ -9,10 +11,9 @@ module.exports = {
       }
     }
 
-    client.on('message', async (message) => {
+    
       if(message.content == 'Bxd1'){
   if(answer = true){
     message.channel.send('Great! 1. Ree1 Bxd1 2. Rxd1. Please use .ans followed by your move. https://imgur.com/nnXNCwT');
   }
-}
     })
