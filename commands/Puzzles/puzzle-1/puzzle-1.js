@@ -1,3 +1,4 @@
+const { MessageAttachment } = require('discord.js');
 module.exports = {
     category: 'Puzzles',
     description: 'Under developement',
