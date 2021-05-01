@@ -5,7 +5,6 @@ module.exports = {
     description: 'Under developement',
     aliases: ['puzzle'],
     callback: ({ message }) => {
-      message.channel.send('Please use .answer followed by your move.', {files:
-    ["puzzle" + puzzleRandomizer + "-1.png"]})
+      message.channel.send('Under Development')
     }
   }
