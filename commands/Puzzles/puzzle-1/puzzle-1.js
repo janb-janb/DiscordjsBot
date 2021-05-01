@@ -4,7 +4,6 @@ module.exports = {
     description: 'Under developement',
     aliases: ['puzzle-1'],
     callback: ({ message }) => {
-      var attachment = new MessageAttachment("https://imgur.com/a/DqAb7JF");
-      message.channel.send('Find the best move for black. Please use .answer followed by your move.', attachment)
+      message.channel.send('Find the best move for black. Please use .answer followed by your move. https://imgur.com/a/DqAb7JF')
     }
   }
