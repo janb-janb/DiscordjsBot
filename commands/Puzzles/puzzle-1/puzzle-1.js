@@ -5,6 +5,6 @@ module.exports = {
     aliases: ['puzzle-1'],
     callback: ({ message }) => {
       var attachment = new MessageAttachment("puzzle1-1.png");
-      message.channel.send('Find the best move for black. Please use .answer followed by your move.' + attachment)
+      message.channel.send('Find the best move for black. Please use .answer followed by your move.', attachment)
     }
   }
