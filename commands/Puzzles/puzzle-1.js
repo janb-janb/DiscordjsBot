@@ -11,7 +11,7 @@ module.exports = {
     }
 
     
-      if(message.content == 'Bxd1'){
+      if(answer === 'Bxd1'){
   if(answer = true){
     message.channel.send('Great! 1. Ree1 Bxd1 2. Rxd1. Please use .ans followed by your move. https://imgur.com/nnXNCwT');
   }
