@@ -1,4 +1,4 @@
-if(answer = true){
+if(window.answer = true){
 module.exports = {
     category: 'Puzzles',
     description: 'Under developement',
