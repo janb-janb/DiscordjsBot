@@ -61,6 +61,10 @@ client.on('ready', () => {
       name: 'Moderation',
       emoji: '🛠️'
     },
+    {
+      name: 'Puzzles',
+      emoji: '🧩'
+    },
     ])
   })
     
