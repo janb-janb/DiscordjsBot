@@ -2,7 +2,7 @@ $.getscript("puzzle-1.js", function(){
 
 });
 
-if(window.answer = true){
+if(answer = true){
 module.exports = {
     category: 'Puzzles',
     description: 'Under developement',
