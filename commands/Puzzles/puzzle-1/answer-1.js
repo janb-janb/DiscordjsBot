@@ -1,3 +1,7 @@
+$.getscript("puzzle-1.js", function(){
+
+});
+
 if(window.answer = true){
 module.exports = {
     category: 'Puzzles',
