@@ -14,6 +14,7 @@ module.exports = {
         }
         
         User.ban({reason: banReason})
+        return message.reply("User Succesfully banned!")
 
       }
     }
