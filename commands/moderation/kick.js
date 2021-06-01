@@ -14,6 +14,7 @@ module.exports = {
         }
         
         User.kick({reason: kickReason})
+        return message.reply("User succesfully kicked!")
 
       }
     }
