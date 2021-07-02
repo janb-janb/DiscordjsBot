@@ -82,4 +82,4 @@ client.on('message', async (message) => {
 })
         
          
-client.login('NzcwMzU4OTY1NjUzNDcxMjMy.X5casQ.towJbYbs6qUkvI2O_W-EqlQwH2g')
+client.login('NzcwMzU4OTY1NjUzNDcxMjMy.X5casQ.QyA7TogFYY2fwQPYjFmpauR2SVc')
