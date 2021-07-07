@@ -7,7 +7,7 @@ const client = new DiscordJS.Client({
 })
 
 client.on('ready', () => {
-  client.user.setActivity('England 0-1 Denmark');
+  client.user.setActivity('England 1-1 Denmark');
   const messagesPath = ''
 
   // Used to configure the database connection.
