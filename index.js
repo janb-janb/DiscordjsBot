@@ -2,6 +2,8 @@ const DiscordJS = require('discord.js')
 const WOKCommands = require('wokcommands')
 require('dotenv').config()
 
+const welcome = require('./commands/administration commands/welcome')
+
 const client = new DiscordJS.Client({
   partials: ['MESSAGE', 'REACTION'],
 })
@@ -9,6 +11,8 @@ const client = new DiscordJS.Client({
 client.on('ready', () => {
   client.user.setActivity('Chess with Gods');
   const messagesPath = ''
+  
+  welcome(client)
 
   // Used to configure the database connection.
   // These are the default options but you can overwrite them
