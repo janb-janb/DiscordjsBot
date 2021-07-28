@@ -1,19 +1,19 @@
 const { default: messageHandler } = require("wokcommands/dist/message-handler")
 
 module.exports = client => {
-    const channelId = '856251143433093132'
+    let channelId = '856251143433093132'
 
 
 
     client.on('guildMemberAdd', (member) => {
         console.log(member)
-
-        const message = `Please welcome <@${
+        const message = `🎉🎉Welcome <@${
             member.id
-          }> to the server!`
+          }> to the server 🎉🎉! Make sure to verify yourself in <#784110209823932456> and get some roles from <#772118882243706920>, after that go into the <#615478996951498754> and have some fun chating and learning! We hope you will enjoy your stay!`
 
-        const channel = member.guild.channels.cache.get(channelId)
+        let channel = member.guild.channels.cache.get(channelId)
         channel.send(message)
+
 
     })
 }
