@@ -2,7 +2,7 @@ const DiscordJS = require('discord.js')
 const WOKCommands = require('wokcommands')
 require('dotenv').config()
 
-const welcome = require('./commands/administration commands/welcome')
+const welcome = require('./commands/administrative commands/welcome')
 
 const client = new DiscordJS.Client({
   partials: ['MESSAGE', 'REACTION'],
